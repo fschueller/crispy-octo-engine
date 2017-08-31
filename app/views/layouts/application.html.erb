@@ -23,7 +23,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title><%= yield(:title) %> | Crispy Octo Engine</title>
+    <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -42,9 +42,9 @@
             <div class="inner">
               <h3 class="masthead-brand">Crispy Octo Engine</h3>
               <nav class="nav nav-masthead">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Contact</a>
+                <%= link_to 'Home', root_path, class: 'nav-link' %>
+                <%= link_to 'About', about_path, class: 'nav-link' %>
+                <%= link_to 'Help', help_path, class: 'nav-link' %>
               </nav>
             </div>
           </div>
