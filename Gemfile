@@ -34,6 +34,12 @@ gem 'jbuilder', '~> 2.5'
 # OAuth gem for Github
 gem 'omniauth-github'
 
+# Bootstrap 4
+gem 'bootstrap', '~> 4.0.0.beta'
+
+# Help bootstrap
+gem 'jquery-rails'
+
 group :production do
   gem 'pg', '0.20.0'
 end
