@@ -11,7 +11,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      # do stuff
+      flash[:success] = 'Welcome to your Crispy Octo Engine!'
+      redirect_to @user
     else
       render 'new'
     end
