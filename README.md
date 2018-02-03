@@ -1,3 +1,5 @@
+[![Dependency Status](https://gemnasium.com/badges/github.com/fschueller/crispy-octo-engine.svg)](https://gemnasium.com/github.com/fschueller/crispy-octo-engine)
+
 # README
 
 Simple Rails playground.

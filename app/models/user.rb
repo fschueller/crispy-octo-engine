@@ -1,13 +1,11 @@
 class User < ApplicationRecord
-  def self.from_omniauth(auth)
-    where(provider: auth.provider, uid: auth.uid).first_or_initialize.tap do |user|
-      user.email = auth.info.email
-      user.uid = auth.uid
-      user.provider = auth.provider
-      user.avatar_url = auth.info.image
-      user.username = auth.info.name
-      user.oauth_token = auth.credentials.token
-      user.save!
-    end
-  end
+  VALID_EMAIL = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
+
+  validates :name, presence: true
+  validates :email, presence: true, format: { with: VALID_EMAIL }, uniqueness: true
+  validates :password, presence: true, length: { minimum: 8 }
+
+  before_save { self.email = email.downcase }
+
+  has_secure_password
 end
