@@ -93,6 +93,18 @@ body {
   border-bottom-color: #fff;
 }
 
+/* Overrides bootstrap styling, be careful */
+
+ul.dropdown-menu {
+  min-width: 5.2rem;
+  background-color: #4a4a4a;
+  border: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+ul.dropdown-menu.show {
+  padding-left: 5px;
+}
+
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
