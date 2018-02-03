@@ -39,7 +39,7 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 
 group :production do
-  gem 'pg', '0.20.0'
+  gem 'pg', '1.0.0'
 end
 
 group :development, :test do
