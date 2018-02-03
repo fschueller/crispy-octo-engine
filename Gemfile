@@ -41,7 +41,7 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.20'
 end
 
 group :development, :test do
