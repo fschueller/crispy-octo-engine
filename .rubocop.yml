@@ -1,0 +1,12 @@
+AllCops:
+  Exclude:
+    - 'bin/*'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 160
+
+Style/Documentation:
+  Enabled: false
