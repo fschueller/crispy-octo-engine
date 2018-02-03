@@ -33,7 +33,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'omniauth-github'
 
 # Bootstrap 4
-gem 'bootstrap', '~> 4.0.0.beta'
+gem 'bootstrap', '~> 4.0.0'
 
 # Help bootstrap
 gem 'jquery-rails'
@@ -57,4 +57,4 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+#gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
