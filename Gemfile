@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 #   "https://github.com/#{repo_name}.git"
 # end
 
+# Specify ruby
+ruby '~> 2.5.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use Puma as the app server
@@ -39,7 +41,7 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 
 group :production do
-  gem 'pg', '1.0.0'
+  gem 'pg'
 end
 
 group :development, :test do
