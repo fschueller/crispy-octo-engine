@@ -8,7 +8,7 @@ source 'https://rubygems.org'
 # Specify ruby
 ruby '~> 2.5.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.4'
+gem 'rails', '~> 5.1.6'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -16,7 +16,7 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -35,10 +35,12 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'omniauth-github'
 
 # Bootstrap 4
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.1.0'
 
 # Help bootstrap
 gem 'jquery-rails'
+
+gem 'sqlite3'
 
 group :production do
   gem 'pg', '~> 0.20'
@@ -48,7 +50,6 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'sqlite3'
 end
 
 group :development do
